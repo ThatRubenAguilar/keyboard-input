@@ -1,0 +1,9 @@
+KeyboardInput plays keyboard input back in the sequence of passed arguments.
+Arguments may be one of the following: 
+A hex number representing the key code of the key to press or unpress, ex: 0xA4 
+or a decimal number prefixed by w with no spaces representing the wait time in ms at that point in the sequence, ex: w150 
+
+Keys must be pressed and unpressed, the sequence 0x44 w150 0x45 0x45 w150 0x44
+Will press key 0x44, wait 150ms, press 0x45, unpress 0x45, wait 150ms, and unpress 0x44 
+
+Virtual key codes can be found at: http://www.kbdedit.com/manual/low_level_vk_list.html
